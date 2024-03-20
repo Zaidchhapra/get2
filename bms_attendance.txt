@@ -1,0 +1,1307 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*C Program to understand the working of do-while with different range of values and test(even,odd)TC*/
+#include<stdio.h> 
+
+int main()
+{ 
+    int i=0,j=0,n=5; 
+    //clssrc(); 
+    printf("\nEnter A No: "); 
+    scanf("%d",&i); 
+    do { 
+        /* code */ 
+        if (i%2==0) 
+        {  
+            printf("%d",i); 
+            printf(": IS A EVEN NO\n"); 
+            i++; /* code */ 
+            } 
+            else 
+            { 
+                printf("%d",i); 
+                printf(": IS AN ODD NO\n"); 
+                i++; 
+                
+                } 
+                j++; 
+                } 
+                while(i>0&&j<n); 
+                // getch(); 
+                return 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*C Program to understand the working of switch with different range of values and test cases(calculator)Tc*/
+
+#include<stdio.h> 
+int main()
+{ 
+int a,b,c,i; 
+printf("1.ADD\n 2.SUB\n 3.MUL\n 4.DIV\n ENTER YOUR CHOICE: "); 
+scanf("%d",&i); 
+printf("ENTER A,B VALUES: "); 
+scanf("%d%d",&a,&b); 
+switch (i) { 
+case 1: c=a+b; printf("THE SUM OF A & B IS %d",c); 
+break; 
+case 2: c=a-b; 
+printf("THE MIN OF A & B IS %d",c); 
+break; 
+case 3: c=a*b; 
+printf("THE MUL OF A & B IS %d",c); 
+break; 
+case 4: c=a/b; 
+printf("THE DIV OF A & B IS %d",c); 
+break; 
+default: printf("ENTER YOUR CHOICE: "); 
+break; 
+} 
+return 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*java code write program to test percentage who scored above 60 percentTC*/
+
+package Mytest;
+import java.util.Scanner;
+public class percentageabove60 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number of students");
+int n= sc.nextInt();
+String name[] = new String[n];
+int percentage[]=new int[n];
+for(int i=0;i<n;i++) {
+System.out.println("Student Detail: "+i);
+System.out.println("Enter Name: ");
+sc.nextLine();
+name[i]=sc.nextLine();
+System.out.println("Enter Percentage: ");
+percentage[i]=sc.nextInt();
+}
+for (int j=0;j<n;j++){
+if(percentage[j] > 60){
+System.out.println("Student "+name[j]+" having percentage "+percentage[j]+" has above 60 Percentage");
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*gcd install selenium server (selenium RC) and demonstrate it using  a script in java
+
+
+
+<html>
+<head>
+<script type = "text/javascript">
+function gcd()
+{
+var x,y;
+x = parseInt(document.myform.n1.value);
+y = parseInt(document.myform.n2.value);		
+while(x!=y)
+{
+if(x>y)
+x=x-y;
+else
+y=y-x;
+}
+document.myform.result.value = x;
+}
+</script>
+</head>
+<body>
+<center>
+<h1>---Program to calculate GCD of 2 numbers---</h1>
+<hr color = "red">
+<form name = "myform">
+enter no. 1: <input type = "text" name = "n1" value = " "><br><br> 
+enter no. 2: <input type = "text" name = "n2" value = " "><br><br> 
+<input type = "button" name = "btn" value = "get gcd" onClick = "gcd()"><br><br>
+GCD: <input type = "text" name = "result" value = "">
+</center>
+</body>
+</html>
+
+
+
+
+package Pract4;
+import org.openqa.selenium.By;  //add selenium zip and jar file
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+public class Test1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "S:\\sem_6\\stqa\\practical\\chromedriver.exe"); //check chrome version
+		System.setProperty("webdriver.chrome.driver.port", "9095");
+		System.setProperty("webdriver.chrome.logfile", "S:\\sem_6\\stqa\\practical\\chromedriver.log"); //you provide path and name then it will gen it auto
+		ChromeOptions options = new ChromeOptions();
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("file:///S:/sem_6/stqa/practical/index.html");
+		driver.manage().window().maximize();
+		driver.findElement(By.name("n1")).sendKeys("36");
+		driver.findElement(By.name("n2")).sendKeys("6");
+		driver.findElement(By.name("btn")).click();
+		String result = driver.findElement(By.name("result")).getAttribute("value");
+		System.out.println("GCD = "+result);
+		driver.quit();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Create test case using Selenium commands*/
+
+1.Run selenium extension -> Create new project
+2.Add new test case
+3.Add RedBus website URL
+4.Right click -> selenium IDE -> Verify -> Title
+5.Right click -> selenium IDE -> Assert -> Text
+6.Right click -> selenium IDE -> Store -> Text
+7.Go to Selenium -> name the variable as "price"
+8.Add echo command and $(price)
+9.run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Write and Test program to count number of check boxes on the page checked and unchecked count*/
+
+package Pract4;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class MultiCheckBox {
+	static String driverPath="S:\\sem_6\\stqa\\practical\\chromedriver.exe";
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		System.setProperty("webdriver.chrome.driver.port", "9095");
+		ChromeOptions options = new ChromeOptions();
+		ChromeDriver driver = new ChromeDriver(options);
+		String appUrl = "S:\\sem_6\\stqa\\practical\\index1.html";
+		
+		driver.get(appUrl);
+		List<WebElement> checkBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
+		
+		int checkedCount=0, uncheckedCount=0;
+		for(int i=0; i<checkBoxes.size();i++) {
+			System.out.println(i+ " Checkbox is selected"+ checkBoxes.get(i).isSelected());
+			if(checkBoxes.get(i).isSelected()) {checkedCount++;}
+			else{uncheckedCount++;}
+		System.out.println("No. of Selected Checkbox: "+checkedCount);
+		System.out.println("No. of unselected checkbox: "+ uncheckedCount);
+		}
+		driver.quit();
+	}
+}
+
+
+
+<html>
+<body>
+<input type ="checkbox" value="A">A<br>
+<input type ="checkbox" value="B" CHECKED>B<br>
+<input type ="checkbox" value="C">C<br>
+<input type ="checkbox" value="D" CHECKED>D<br>
+<input type ="checkbox" value="E">E<br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Write and test a program to provide total number of objects present/available on webpage*/
+
+
+package Pract4;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class prac8 {
+	static String driverPath="S:\\sem_6\\stqa\\practical\\chromedriver.exe";
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		System.setProperty("webdriver.chrome.driver.port","9095" );
+		ChromeOptions options=new ChromeOptions();
+		WebDriver driver=new ChromeDriver(options);
+		String appUrl="https://www.google.co.in/";
+		driver.get(appUrl);
+		java.util.List<WebElement> links = 
+		driver.findElements(By.tagName("a"));
+		for(int i=1;i<links.size();i=i+1) {
+			System.out.println(links.get(i).getText());
+		}
+		System.out.println("Total No. of Links: "+links.size());
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Load testing using JMeter*/
+
+Step 1: Download Apache JMeter 5.6.3 – Binary file (zip)
+Step 2: Etract Zip
+•Go to the bin folder: C:\Users\nmcc.student\Downloads\apache-jmeter-5.6.3\bin
+•Open the jmeter Windows Batch File
+Step 3: Apache JMeter will open
+Step 4:Add-> sampler-> HTTP Request sampler
+Step 5:add a server name and path
+Step 6:httprequest(rc)->Add->Listener->View Result tree and View Result table
+Step 7:-Run it : Ctrl R
+Step 8:-Go to MyThread and increase the number of Threads, ramp up period and check infinite loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
